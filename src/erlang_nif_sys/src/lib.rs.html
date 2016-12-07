@@ -423,6 +423,10 @@
 <span id="379">379</span>
 <span id="380">380</span>
 <span id="381">381</span>
+<span id="382">382</span>
+<span id="383">383</span>
+<span id="384">384</span>
+<span id="385">385</span>
 </pre><pre class='rust '>
 <span class='doccomment'>/*!
 Low level Rust bindings to the [Erlang NIF API](http://www.erlang.org/doc/man/erl_nif.html).
@@ -637,6 +641,11 @@ extern &quot;C&quot; fn native_add(env: *mut ErlNifEnv,
     <span class='ident'>pid</span>: <span class='ident'>ERL_NIF_TERM</span>,
 }
 
+<span class='doccomment'>/// See [enif_make_pid](http://erlang.org/doc/man/erl_nif.html#enif_make_pid) in the Erlang docs</span>
+<span class='kw'>pub</span> <span class='kw'>fn</span> <span class='ident'>enif_make_pid</span>(<span class='ident'>_env</span>: <span class='op'>*</span><span class='kw-2'>mut</span> <span class='ident'>ErlNifEnv</span>, <span class='ident'>pid</span>: <span class='kw-2'>&amp;</span> <span class='ident'>ErlNifPid</span>) <span class='op'>-&gt;</span> <span class='ident'>ERL_NIF_TERM</span> {
+    <span class='ident'>pid</span>.<span class='ident'>pid</span>
+}
+
 <span class='doccomment'>/// See [ErlNifSysInfo](http://www.erlang.org/doc/man/erl_nif.html#ErlNifSysInfo) in the Erlang docs.</span>
 <span class='attribute'>#[<span class='ident'>allow</span>(<span class='ident'>missing_copy_implementations</span>)]</span>
 <span class='attribute'>#[<span class='ident'>repr</span>(<span class='ident'>C</span>)]</span>
@@ -804,7 +813,6 @@ extern &quot;C&quot; fn native_add(env: *mut ErlNifEnv,
         }
     )
 }
-
 </pre>
 </section>
     <section id='search' class="content hidden"></section>

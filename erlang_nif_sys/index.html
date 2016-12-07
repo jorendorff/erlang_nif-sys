@@ -47,7 +47,7 @@
                    <a id="toggle-all-docs" href="javascript:void(0)" title="collapse all docs">
                        [<span class='inner'>&#x2212;</span>]
                    </a>
-               </span><a id='src-0' class='srclink' href='../src/erlang_nif_sys/src/lib.rs.html#1-380' title='goto source code'>[src]</a></span></h1>
+               </span><a id='src-0' class='srclink' href='../src/erlang_nif_sys/src/lib.rs.html#1-385' title='goto source code'>[src]</a></span></h1>
 <div class='docblock'><p>Low level Rust bindings to the <a href="http://www.erlang.org/doc/man/erl_nif.html">Erlang NIF API</a>.</p>
 
 <h1 id='nif-crate' class='section-header'><a href='#nif-crate'>NIF Crate</a></h1>
@@ -379,13 +379,6 @@ the the <code>args</code> parameter.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_binary_to_term.html'
-                                  title='erlang_nif_sys::enif_binary_to_term'>enif_binary_to_term</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_binary_to_term">enif_binary_to_term</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
                            <td><a class='fn' href='fn.enif_clear_env.html'
                                   title='erlang_nif_sys::enif_clear_env'>enif_clear_env</a></td>
                            <td class='docblock short'>
@@ -411,13 +404,6 @@ the the <code>args</code> parameter.</p>
                                   title='erlang_nif_sys::enif_convert_time_unit'>enif_convert_time_unit</a></td>
                            <td class='docblock short'>
                                 <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_convert_time_unit">enif_convert_time_unit</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_cpu_time.html'
-                                  title='erlang_nif_sys::enif_cpu_time'>enif_cpu_time</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_cpu_time">enif_cpu_time</a> in the Erlang docs.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -502,13 +488,6 @@ the the <code>args</code> parameter.</p>
                                   title='erlang_nif_sys::enif_get_local_pid'>enif_get_local_pid</a></td>
                            <td class='docblock short'>
                                 <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_get_local_pid">enif_get_local_pid</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_get_local_port.html'
-                                  title='erlang_nif_sys::enif_get_local_port'>enif_get_local_port</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_get_local_port">enif_get_local_port</a> in the Erlang docs.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -617,13 +596,6 @@ the the <code>args</code> parameter.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_is_current_process_alive.html'
-                                  title='erlang_nif_sys::enif_is_current_process_alive'>enif_is_current_process_alive</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_is_current_process_alive">enif_is_current_process_alive</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
                            <td><a class='fn' href='fn.enif_is_empty_list.html'
                                   title='erlang_nif_sys::enif_is_empty_list'>enif_is_empty_list</a></td>
                            <td class='docblock short'>
@@ -673,6 +645,13 @@ the the <code>args</code> parameter.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='fn' href='fn.enif_is_on_dirty_scheduler.html'
+                                  title='erlang_nif_sys::enif_is_on_dirty_scheduler'>enif_is_on_dirty_scheduler</a></td>
+                           <td class='docblock short'>
+                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_is_on_dirty_scheduler">enif_is_on_dirty_scheduler</a> in the Erlang docs.</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='fn' href='fn.enif_is_pid.html'
                                   title='erlang_nif_sys::enif_is_pid'>enif_is_pid</a></td>
                            <td class='docblock short'>
@@ -684,20 +663,6 @@ the the <code>args</code> parameter.</p>
                                   title='erlang_nif_sys::enif_is_port'>enif_is_port</a></td>
                            <td class='docblock short'>
                                 <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_is_port">enif_is_port</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_is_port_alive.html'
-                                  title='erlang_nif_sys::enif_is_port_alive'>enif_is_port_alive</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_is_port_alive">enif_is_port_alive</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_is_process_alive.html'
-                                  title='erlang_nif_sys::enif_is_process_alive'>enif_is_process_alive</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_is_process_alive">enif_is_process_alive</a> in the Erlang docs.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -848,6 +813,13 @@ the the <code>args</code> parameter.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
+                           <td><a class='fn' href='fn.enif_make_pid.html'
+                                  title='erlang_nif_sys::enif_make_pid'>enif_make_pid</a></td>
+                           <td class='docblock short'>
+                                <p>See <a href="http://erlang.org/doc/man/erl_nif.html#enif_make_pid">enif_make_pid</a> in the Erlang docs</p>
+                           </td>
+                       </tr>
+                       <tr class=' module-item'>
                            <td><a class='fn' href='fn.enif_make_ref.html'
                                   title='erlang_nif_sys::enif_make_ref'>enif_make_ref</a></td>
                            <td class='docblock short'>
@@ -925,13 +897,6 @@ the the <code>args</code> parameter.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_make_unique_integer.html'
-                                  title='erlang_nif_sys::enif_make_unique_integer'>enif_make_unique_integer</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_make_unique_integer">enif_make_unique_integer</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
                            <td><a class='fn' href='fn.enif_map_iterator_create.html'
                                   title='erlang_nif_sys::enif_map_iterator_create'>enif_map_iterator_create</a></td>
                            <td class='docblock short'>
@@ -988,24 +953,10 @@ the the <code>args</code> parameter.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_now_time.html'
-                                  title='erlang_nif_sys::enif_now_time'>enif_now_time</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_now_time">enif_now_time</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
                            <td><a class='fn' href='fn.enif_open_resource_type.html'
                                   title='erlang_nif_sys::enif_open_resource_type'>enif_open_resource_type</a></td>
                            <td class='docblock short'>
                                 <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_open_resource_type">enif_open_resource_type</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_port_command.html'
-                                  title='erlang_nif_sys::enif_port_command'>enif_port_command</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_port_command">enif_port_command</a> in the Erlang docs.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1083,20 +1034,6 @@ the the <code>args</code> parameter.</p>
                                   title='erlang_nif_sys::enif_system_info'>enif_system_info</a></td>
                            <td class='docblock short'>
                                 <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_system_info">enif_system_info</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_term_to_binary.html'
-                                  title='erlang_nif_sys::enif_term_to_binary'>enif_term_to_binary</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_term_to_binary">enif_term_to_binary</a> in the Erlang docs.</p>
-                           </td>
-                       </tr>
-                       <tr class=' module-item'>
-                           <td><a class='fn' href='fn.enif_thread_type.html'
-                                  title='erlang_nif_sys::enif_thread_type'>enif_thread_type</a></td>
-                           <td class='docblock short'>
-                                <p>See <a href="http://www.erlang.org/doc/man/erl_nif.html#enif_thread_type">enif_thread_type</a> in the Erlang docs.</p>
                            </td>
                        </tr>
                        <tr class=' module-item'>
@@ -1211,8 +1148,7 @@ the the <code>args</code> parameter.</p>
                            <td class='docblock short'>
                                 
                            </td>
-                       </tr></table><h2 id='impls' class='section-header'><a href="#impls">Implementations</a></h2>
-<table></table></section>
+                       </tr></table></section>
     <section id='search' class="content hidden"></section>
 
     <section class="footer"></section>
